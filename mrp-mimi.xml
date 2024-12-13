@@ -1,0 +1,134 @@
+<?xml version="1.0" standalone="yes"?>
+<PatchTableRoot>
+  <Patch name="basic" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15db/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="mimi" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-22db/-12dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="mimi2" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-62db/-52dB">
+	    <Ramp value="-22db/-12db" duration="1.0" type="log"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="mimi3" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-62db/-52dB">
+	    <Ramp value="-22db/-12db" duration="1" type="log"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+
+  <Patch name="calibrate" class="CalibratorNote">		<!-- for Oxygen8 -->
+    <Parameter name="GlobalAmplitude" value="-26dB"/>
+    <Control name="phaseOffset" id="8" channel="0"/>
+    <Control name="amplitudeOffset" id="13" channel="0"/>
+  </Patch>
+
+	<PatchTable>
+	  <Program id="0"> 
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <RelativeVolume>0.5</RelativeVolume>
+	    </Channel>
+	  </Program>
+	  <Program id="1"> 
+	    <Channel id="0">
+	      <Patch>mimi2</Patch>
+		  <RelativeVolume>0.5</RelativeVolume>
+	    </Channel>
+	  </Program>	
+	  <Program id="2"> 
+	    <Channel id="0">
+	      <Patch>mimi2</Patch>
+	      <Range>0-89</Range>
+		  <RelativeVolume>0.5</RelativeVolume>	
+	    </Channel>
+	    <Channel id="0">
+	      <Patch>mimi3</Patch>
+	      <Range>90-127</Range>
+		  <RelativeVolume>0.5</RelativeVolume>	
+	    </Channel>	
+	  </Program>	
+
+	  <Program id="4"> 
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <Range>0-48</Range>
+		  <RelativeVolume>0dB</RelativeVolume>
+	    </Channel>
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <Range>49-54</Range>
+		  <RelativeVolume>-2dB</RelativeVolume>
+	    </Channel>	
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <Range>55-60</Range>
+		  <RelativeVolume>-4dB</RelativeVolume>
+	    </Channel>	
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <Range>61-72</Range>
+		  <RelativeVolume>-6dB</RelativeVolume>
+	    </Channel>	
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <Range>73-84</Range>
+		  <RelativeVolume>-8dB</RelativeVolume>
+	    </Channel>	
+	    <Channel id="0">
+	      <Patch>mimi</Patch>
+		  <Range>85-127</Range>
+		  <RelativeVolume>-10dB</RelativeVolume>
+	    </Channel>	
+	  </Program>	
+
+	  <Program id="5"> 
+	    <Channel id="0" aux="false">
+	      <Patch>mimi</Patch>
+		  <RelativeVolume>0.5</RelativeVolume>
+	    </Channel>
+	    <Channel id="0" aux="true">
+	      <Patch>mimi2</Patch>
+		  <RelativeVolume>0.5</RelativeVolume>
+	    </Channel>	
+	  </Program>
+
+
+	  <Program id="127">
+	   <Channel id="0">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	   <Channel id="15">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	  </Program>	
+	</PatchTable>
+
+  <StringMap>
+  </StringMap>
+
+  <GlobalControls>
+    <Control name="MasterVolume" id="101"/>
+    <Control name="PitchTrackInputMute" id="18" threshold="8"/>
+  </GlobalControls>
+</PatchTableRoot>

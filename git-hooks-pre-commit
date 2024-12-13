@@ -1,0 +1,22 @@
+#!/bin/bash
+
+format_file() {
+  file="${1}"
+  echo Checking ${1}
+  if [ -f $file ]; then
+    diff <(clang-format -style="`cat .clang-format`" --assume-filename=${1} <(git show :./${1}) ) <(git show :./${1}) > /dev/null
+    [ $? -ne 0 ] && printf "Formatting of ${1} is not good. Run\n  clang-format -i ${1}\nor\n  ./tools/clang-format formatall\n, add changes as needed, rinse and repeat\n"  && exit 1;
+  fi
+  return 0;
+}
+
+case "${1}" in
+  --about )
+    echo "Runs clang-format on source files"
+    ;;
+  * )
+    for file in `git diff-index --cached --name-only HEAD | grep -iE '\.(c|cpp|cc|h|hpp)$' ` ; do
+      format_file "${file}"
+    done
+    ;;
+esac

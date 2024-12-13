@@ -1,0 +1,692 @@
+<?xml version="1.0" standalone="yes"?>
+<PatchTableRoot>
+  <Patch name="harmonic1" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-20db/-20dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="0.25"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic1-boost" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="0.25"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic1-middlesection" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+	  <Parameter name="RelativeFrequency" value="0.25"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+    <Patch name="harmonic2-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="0.5"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>
+    <Patch name="harmonic3-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="0.75"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>
+    <Patch name="harmonic4-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="1"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>
+    <Patch name="harmonic5-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="1.25"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>
+    <Patch name="harmonic6-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="1.5"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>    
+    <Patch name="harmonic7-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="1.75"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>  
+    <Patch name="harmonic8-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="2"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>   
+    <Patch name="harmonic9-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="2.25"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>  
+    <Patch name="harmonic10-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="2.5"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>      
+    <Patch name="harmonic11-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="2.75"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>      
+    <Patch name="harmonic12-middlesection" class="RealTimeMidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,.5,.4,.3,.2,.1,.05,.04,.03,.02,.01"/>
+            <Parameter name="RelativeFrequency" value="3"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>      
+    
+    <Patch name="harmonic2" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-18db/-18dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="0.5"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic3" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-16db/-16dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="0.75"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic4" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-14db/-14dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic5" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-12db/-12dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="1.25"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic6" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="1.5"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic7" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="1.75"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic8" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="2"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic9" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="2.25"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic10" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="2.5"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic11" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="2.75"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="harmonic12" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10db/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+	  <Parameter name="RelativeFrequency" value="3"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+
+  <PatchTable>
+	<Program id="0">
+		<!--<Channel id="0">
+			<Patch>harmonic1-boost</Patch>
+			<Range>48-69</Range>
+		</Channel>
+		<Channel id="0">
+			<Patch>harmonic1</Patch>
+			<Range>70-108</Range>
+		</Channel>	-->
+        <Channel id="0">
+			<Patch>harmonic1-middlesection</Patch>
+			<Range>48-108</Range>
+		</Channel> 
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="1">
+		<Channel id="0">
+			<Patch>harmonic2-middlesection</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="2">
+		<Channel id="0">
+			<Patch>harmonic3-middlesection</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="3">
+		<Channel id="0">
+			<Patch>harmonic4</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="4">
+		<Channel id="0">
+			<Patch>harmonic5</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="5">
+		<Channel id="0">
+			<Patch>harmonic6</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="6">
+		<Channel id="0">
+			<Patch>harmonic7</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="7">
+		<Channel id="0">
+			<Patch>harmonic8</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="8">
+		<Channel id="0">
+			<Patch>harmonic9</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="9">
+		<Channel id="0">
+			<Patch>harmonic10</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="10">
+		<Channel id="0">
+			<Patch>harmonic11</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	<Program id="11">
+		<Channel id="0">
+			<Patch>harmonic12</Patch>
+			<Range>48-108</Range>
+		</Channel>
+       <ProgramChange note="36" channel="0" program="0"/>
+       <ProgramChange note="37" channel="0" program="1"/>
+       <ProgramChange note="38" channel="0" program="2"/>
+       <ProgramChange note="39" channel="0" program="3"/>
+       <ProgramChange note="40" channel="0" program="4"/>
+       <ProgramChange note="41" channel="0" program="5"/>
+       <ProgramChange note="42" channel="0" program="6"/>
+       <ProgramChange note="43" channel="0" program="7"/>
+       <ProgramChange note="44" channel="0" program="8"/>
+       <ProgramChange note="45" channel="0" program="9"/>
+       <ProgramChange note="46" channel="0" program="10"/>
+       <ProgramChange note="47" channel="0" program="11"/>
+	</Program>
+	
+	<Program id="20">
+		<Channel id="0">
+			<Patch>harmonic1-middlesection</Patch>
+			<Range>48-108</Range>
+		</Channel>
+        <ProgramChange note="36" channel="0" program="20"/>
+        <ProgramChange note="37" channel="0" program="21"/>
+        <ProgramChange note="38" channel="0" program="22"/>
+        <ProgramChange note="39" channel="0" program="23"/>
+        <ProgramChange note="40" channel="0" program="24"/>
+        <ProgramChange note="41" channel="0" program="25"/>
+        <ProgramChange note="42" channel="0" program="26"/>
+        <ProgramChange note="43" channel="0" program="27"/>
+        <ProgramChange note="44" channel="0" program="28"/>
+        <ProgramChange note="45" channel="0" program="29"/>
+        <ProgramChange note="46" channel="0" program="30"/>
+        <ProgramChange note="47" channel="0" program="31"/>
+	</Program>	
+      <Program id="21">
+          <Channel id="0">
+              <Patch>harmonic2-middlesection</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="22">
+          <Channel id="0">
+              <Patch>harmonic3-middlesection</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="23">
+          <Channel id="0">
+              <Patch>harmonic4</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="24">
+          <Channel id="0">
+              <Patch>harmonic5</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="25">
+          <Channel id="0">
+              <Patch>harmonic6</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="26">
+          <Channel id="0">
+              <Patch>harmonic7</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="27">
+          <Channel id="0">
+              <Patch>harmonic8</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="28">
+          <Channel id="0">
+              <Patch>harmonic9</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="29">
+          <Channel id="0">
+              <Patch>harmonic10</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="30">
+          <Channel id="0">
+              <Patch>harmonic11</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+      <Program id="31">
+          <Channel id="0">
+              <Patch>harmonic12</Patch>
+              <Range>48-108</Range>
+          </Channel>
+          <ProgramChange note="36" channel="0" program="20"/>
+          <ProgramChange note="37" channel="0" program="21"/>
+          <ProgramChange note="38" channel="0" program="22"/>
+          <ProgramChange note="39" channel="0" program="23"/>
+          <ProgramChange note="40" channel="0" program="24"/>
+          <ProgramChange note="41" channel="0" program="25"/>
+          <ProgramChange note="42" channel="0" program="26"/>
+          <ProgramChange note="43" channel="0" program="27"/>
+          <ProgramChange note="44" channel="0" program="28"/>
+          <ProgramChange note="45" channel="0" program="29"/>
+          <ProgramChange note="46" channel="0" program="30"/>
+          <ProgramChange note="47" channel="0" program="31"/>
+      </Program>
+	
+	
+	  <Program id="127">
+	   <Channel id="0">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	   <Channel id="15">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	  </Program>	
+  </PatchTable>
+
+  <StringMap>
+	<Map note="48-108" string="24-84"/>
+  </StringMap>
+
+  <GlobalControls>
+    <Control name="MasterVolume" id="73"/>
+    <Control name="PitchTrackInputMute" id="18" threshold="8"/>
+  </GlobalControls>
+</PatchTableRoot>

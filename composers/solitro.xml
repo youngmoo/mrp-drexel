@@ -1,0 +1,1063 @@
+<?xml version="1.0" standalone="yes"?>
+
+<!-- Spectra of Morning (2011) by Tony Solitro
+  -- Played on standard PianoBar (no continuous position) and MIDI keyboard (ch. 1) 
+  -- Needs 8+ channels of output -->
+
+<PatchTableRoot>
+  <Patch name="basic" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15db/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="basic2" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-35db/-35dB">
+	  <Ramp value="-15db/-15db" duration="1" type="log"/>
+	</Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="basic3" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15db/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="RelativeFrequency" value="1">
+         <Ramp value="7" duration="2" type="log"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+
+  <Patch name="mvt2-1" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".25" type="step"/>
+        <Ramp value="7" duration=".25" type="step"/>
+        <Ramp value="8" duration=".25" type="step"/>
+        <Ramp value="9" duration=".25" type="step"/>
+        <Ramp value="10" duration=".25" type="step"/>
+        <Ramp value="11" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".2" type="step"/>
+        <Ramp value="7" duration=".15" type="step"/>
+        <Ramp value="8" duration=".1" type="step"/>
+        <Ramp value="9" duration=".1" type="step"/>
+        <Ramp value="10" duration=".1" type="step"/>
+        <Ramp value="11" duration=".1" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+  <Patch name="mvt2-1a" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".25" type="step"/>
+        <Ramp value="7" duration=".25" type="step"/>
+        <Ramp value="8" duration=".25" type="step"/>
+        <Ramp value="9" duration=".25" type="step"/>
+        <Ramp value="10" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".2" type="step"/>
+        <Ramp value="7" duration=".15" type="step"/>
+        <Ramp value="8" duration=".1" type="step"/>
+        <Ramp value="9" duration=".1" type="step"/>
+        <Ramp value="10" duration=".1" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+
+  <Patch name="mvt2-1b" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".25" type="step"/>
+        <Ramp value="7" duration=".25" type="step"/>
+        <Ramp value="8" duration=".25" type="step"/>
+        <Ramp value="9" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".2" type="step"/>
+        <Ramp value="7" duration=".15" type="step"/>
+        <Ramp value="8" duration=".1" type="step"/>
+        <Ramp value="9" duration=".1" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+
+  <Patch name="mvt2-1c" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".25" type="step"/>
+        <Ramp value="7" duration=".25" type="step"/>
+        <Ramp value="8" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".2" type="step"/>
+        <Ramp value="7" duration=".15" type="step"/>
+        <Ramp value="8" duration=".1" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+
+  <Patch name="mvt2-1d" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".25" type="step"/>
+        <Ramp value="7" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".2" type="step"/>
+        <Ramp value="7" duration=".15" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+
+  <Patch name="mvt2-1e" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+        <Ramp value="6" duration=".2" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+  <Patch name="mvt2-1f" class="MidiNote">
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-25db"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".25" type="step"/>
+        <Ramp value="4" duration=".25" type="step"/>
+        <Ramp value="5" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>  
+    <Synth class="PllSynth">
+	  <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="GlobalAmplitude" value="-40db">
+	    <Ramp value="-20db" duration="1" type="step"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="RelativeFrequency" value="1">
+        <Ramp value="2" duration="1" type="step"/>
+        <Ramp value="3" duration=".5" type="step"/>
+        <Ramp value="4" duration=".5" type="step"/>
+        <Ramp value="1" duration=".25" type="step"/>
+      </Parameter>
+    </Synth>
+  </Patch>
+
+
+
+
+  <Patch name="calibrate" class="CalibratorNote">		<!-- for Oxygen8 -->
+    <Parameter name="GlobalAmplitude" value="-26dB"/>
+    <Control name="phaseOffset" id="8" channel="0"/>
+    <Control name="amplitudeOffset" id="13" channel="0"/>
+  </Patch>
+
+  <Patch name="attack" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-5dB/-5dB">
+        <Ramp value="-30dB" duration=".2" type="log"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+
+  <Patch name="bass_pedal" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-8dB/-8dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="bass_pedal2" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-8dB/-8dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="tenor_pedal" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15dB/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="tenor_pedal2" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15dB/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="upper_line" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-22dB/-22dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.2,.1,.03,.01"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="upper_line_soft" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-30dB/-30dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.2,.1,.03,.01"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="upper_line_soft_autodim" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-30dB/-30dB">
+	<Ramp value="-30dB" duration="11" type="log"/>
+	<Ramp value="-60dB" duration="5" type="log"/>
+      </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.2,.1,.03,.01"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+
+  <!-- try using harmonics here? -->
+  <Patch name="hairpin1" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-40dB/-40dB">
+        <Ramp value="-25dB/-18dB" duration="0.05" type="log"/>
+        <!--<Ramp value="-20dB" duration=".5" type="step"/>
+        <Ramp value="-40dB" duration="1" type="log"/>-->
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1">
+	    <!--<Ramp value="1,.5,.4,.3,.2,.1,.05,.02" duration="1" type="log"/>
+	    <Ramp value="1,.5,.4,.3,.2,.1,.05,.02" duration=".5" type="step"/>
+	    <Ramp value="1" duration=".5" type="log"/>-->
+	  </Parameter>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="hairpin2" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-45dB/-45dB">
+        <Ramp value="-15dB" duration="3" type="log"/>
+        <Ramp value="-15dB" duration=".75" type="step"/>
+        <Ramp value="-45dB" duration="1.5" type="log"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1,.2,.1,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+    <Patch name="hairpin3" class="MidiNote">
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-45dB/-45dB">
+                <Ramp value="-22dB" duration="3" type="log"/>
+                <Ramp value="-22dB" duration=".75" type="step"/>
+                <Ramp value="-45dB" duration="1.5" type="log"/>
+            </Parameter>
+            <Parameter name="HarmonicAmplitudes" value="1,.2,.1,.05"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>
+
+    
+  <Patch name="harmonic1" class="MidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-27dB/-23dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.2,.1,.03,.01"/>
+      <Parameter name="RelativeFrequency" value="2"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+    <Patch name="harmonic1and5" class="MidiNote">
+        <VelocityCurve>2</VelocityCurve>
+        <Synth class="PllSynth">
+            <Parameter name="GlobalAmplitude" value="-12dB/-12dB"/>
+            <Parameter name="HarmonicAmplitudes" value="1,0,0,0,1"/>
+            <Parameter name="LoopGain" value="100000"/>
+        </Synth>
+    </Patch>
+
+
+	<PatchTable>
+	  <Program id="0">     <!-- reh. 1 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line_soft</Patch>
+	      <Range>90</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>	
+	  </Program>
+	  <Program id="+">    <!-- reh. 1, after high F# -->
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line_soft</Patch>
+	      <Range>90</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>		
+        <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>83,84</Range>
+	      <MonoVoice>2</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>
+        <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>78,86</Range>
+	      <MonoVoice>2</MonoVoice>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>	
+	  </Program>
+
+	  <Program id="+">     <!-- reh. 2 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+	  </Program>	
+	  <Program id="+">    <!-- reh. 2 before long arrival of high D -->
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>86</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>		
+        <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>78</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>
+        <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>73</Range>
+	      <MonoVoice>2</MonoVoice>
+	      <SustainAlways>false</SustainAlways>
+		<RelativeVolume>0.7</RelativeVolume>
+	    </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>31</Range>
+              <SustainAlways>false</SustainAlways>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>38</Range>
+              <SustainAlways>false</SustainAlways>
+          </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1a</Patch>
+              <Range>47</Range>
+              <SustainAlways>false</SustainAlways>
+          </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1a</Patch>
+              <Range>50</Range>
+              <SustainAlways>false</SustainAlways>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1b</Patch>
+              <Range>55</Range>
+              <SustainAlways>false</SustainAlways>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1b</Patch>
+              <Range>59</Range>
+              <SustainAlways>false</SustainAlways>
+          </Channel>				
+	  </Program>	
+	  <Program id="+">     <!-- reh. 3 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+		<Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>	
+	  </Program>
+	  <Program id="+">     <!-- reh. 3 last B -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>83</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>	
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>62,78</Range>
+	      <SustainAlways>false</SustainAlways>
+		<RelativeVolume>0.7</RelativeVolume>
+	    </Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- reh. 4 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- after reh. 6, repeated notes -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>72,80,83,89,91</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- staccatissimo after reh. 6 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line_soft</Patch>
+	      <Range>84,93</Range>
+	      <!--<MonoVoice>1</MonoVoice>-->
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>	
+       <Channel id="0">
+	      <Patch>upper_line_soft</Patch>
+	      <Range>72,74</Range>
+	      <!--<MonoVoice>1</MonoVoice>-->
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- top of p. 4, before reh. 7, G# in LH -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal2</Patch>
+		  <Range>41-43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>tenor_pedal2</Patch>
+		  <Range>56</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>			
+	  <Program id="+">     <!-- silent chord before reh. 7 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal2</Patch>
+		  <Range>41-43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>tenor_pedal2</Patch>
+		  <Range>56</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>hairpin3</Patch>
+	      <Range>62,68,70,72,78,83</Range>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>		
+	  <Program id="+">     <!-- right after silent chord -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>41-43,56</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- reh. 7 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal2</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- repeated notes after reh. 7 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>72,78,79,83,85</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- after repeated notes -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>51</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- second group of repeated notes -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>51</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>		
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>75,80,82</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- after second group of repeated notes -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>40,43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>51</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- chords on p. 6, after reh. 8 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>40,43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>80,86,88,91,93</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>		
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>28</Range>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>35</Range>
+          </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>40</Range>
+          </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>47</Range>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>52</Range>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1</Patch>
+              <Range>55</Range>
+          </Channel>		a
+	  </Program>	
+	  <Program id="+">     <!-- reh. 9 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>36</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>24</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>		
+       <Channel id="0">
+	      <Patch>hairpin2</Patch>
+	      <Range>53,60,64,71</Range>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>	
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>48,55</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>	
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>58,62,66,68,82</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- before reh. 10 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>36,38</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>24,26,45</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>15</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- after 11, last m. of page 7 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>47,48</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+       <Channel id="0">
+	      <Patch>upper_line_soft</Patch>
+	      <Range>55-77</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- middle of page 8, B2 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>47</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- line on bottom system of page 8 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>47</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>52,59,62,68</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- second half of line (m. 63) -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>47</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+          <Channel id="0">
+              <Patch>tenor_pedal</Patch>
+              <Range>52</Range>
+              <SustainAlways>true</SustainAlways>
+              <MonoVoice>0</MonoVoice>		
+              <Priority>1</Priority>
+          </Channel>	                
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>59,62,68,75,77</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- last measure of p. 8 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>45</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+          <Channel id="0">
+              <Patch>tenor_pedal</Patch>
+              <Range>52</Range>
+              <SustainAlways>true</SustainAlways>
+              <MonoVoice>0</MonoVoice>		
+              <Priority>1</Priority>
+          </Channel>	          
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- chords top of p. 9 -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>45</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	
+       <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>53-108</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>		
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>
+	  <Program id="+">     <!-- after chords top of p. 8 -->	
+	    <!--<Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>45</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>	-->
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- when voice enters -->	
+       <Channel id="0">
+	      <Patch>harmonic1</Patch>
+	      <Range>0-66,75-108</Range>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>
+	    <Channel id="1">
+		  <Patch>hairpin1</Patch>
+		</Channel>		
+	  </Program>	
+	  <Program id="+">     <!-- last system -->	
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line_soft_autodim</Patch>
+	      <Range>90</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>		
+	  </Program>
+	  <Program id="+">    <!-- last system, after high F# -->
+	    <Channel id="0">
+		  <Patch>bass_pedal</Patch>
+		  <Range>43</Range>
+		  <SustainAlways>true</SustainAlways>
+	      <MonoVoice>0</MonoVoice>		
+		  <Priority>1</Priority>
+		</Channel>
+       <Channel id="0">
+	      <Patch>upper_line_soft_autodim</Patch>
+	      <Range>90</Range>
+	      <MonoVoice>1</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>		
+        <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>83,84</Range>
+	      <MonoVoice>2</MonoVoice>
+	      <SustainAlways>true</SustainAlways>
+	    </Channel>
+        <Channel id="0">
+	      <Patch>upper_line</Patch>
+	      <Range>78,86</Range>
+	      <MonoVoice>2</MonoVoice>
+	      <SustainAlways>false</SustainAlways>
+	    </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1c</Patch>
+              <Range>31</Range>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1c</Patch>
+              <Range>38</Range>
+          </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1c</Patch>
+              <Range>47</Range>
+          </Channel>	
+          <Channel id="1">
+              <Patch>mvt2-1c</Patch>
+              <Range>50</Range>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1c</Patch>
+              <Range>55</Range>
+          </Channel>
+          <Channel id="1">
+              <Patch>mvt2-1c</Patch>
+              <Range>59</Range>
+          </Channel>		
+          <Channel id="1">
+              <Patch>harmonic1and5</Patch>
+              <Range>43</Range>
+              <Priority>2</Priority>
+          </Channel>	
+	  </Program>	
+					
+	  <Program id="127">
+	   <Channel id="0">
+	     <Patch>calibrate</Patch>
+             <RelativeVolume>1</RelativeVolume>
+	   </Channel>
+	   <Channel id="15">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	  </Program>	
+	</PatchTable>
+
+  <StringMap>
+  </StringMap>
+
+  <GlobalControls>
+    <Control name="MasterVolume" id="13"/>
+    <Control name="PitchTrackInputMute" id="18" threshold="8"/>
+  </GlobalControls>
+</PatchTableRoot>

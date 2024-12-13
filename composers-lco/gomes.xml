@@ -1,0 +1,167 @@
+<?xml version="1.0" standalone="yes"?>
+<PatchTableRoot>
+  <Patch name="basic" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15db/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="calibrate" class="CalibratorNote">		<!-- for Oxygen8 -->
+    <Parameter name="GlobalAmplitude" value="-26dB"/>
+    <Control name="phaseOffset" id="8" channel="0"/>
+    <Control name="amplitudeOffset" id="13" channel="0"/>
+  </Patch>
+
+  <Patch name="mrp-standard" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+	 	<Parameter name="GlobalAmplitude" value="-55dB/-20dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+	    <Parameter name="GlobalAmplitude" value="1/2" concavity="0"/>
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	    <Parameter name="HarmonicCentroid" value="1/4" round="1" shift="multiply"/>		
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Pitch">
+        <Parameter name="RelativeFrequency" value="1/1.059" mode="exp"/>
+		<Parameter name="LoopGain" value="0/0" concavity="-1000"/>
+	    <Parameter name="GlobalAmplitude" value="1/8" concavity="0" mode="abs"/>
+		<Parameter name="HarmonicAmplitudes" value="0/0,0/.125,0/.125,0/.0625,0/.125,0/.125,0/.125,0/.125" concavity="-5" mode="abs"/>
+        <Vibrato weight=".99" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Harmonic">
+        <Parameter name="HarmonicCentroid" value="1/4" round="0" shift="multiply"/>
+        <Parameter name="HarmonicAmplitudes" value="0/0,0/-.25,0/-.125,0/-.0625"/>
+		<Parameter name="GlobalAmplitude" value="1/16" concavity="-2"/>
+      </Quality>
+    </RealTimeQualities>
+  </Patch>
+
+  <Patch name="gomes-cresc1" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-45dB">
+        <Ramp value="-20db" duration="0.5" type="log"/>
+        <Ramp value="-10db" duration="0.3" type="log"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+  <Patch name="gomes-cresc1-less" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-45dB">
+        <Ramp value="-15db" duration="0.8" type="log"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+  <Patch name="gomes-cresc1-more" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-35dB">
+        <Ramp value="-10db" duration="0.5" type="log"/>
+        <Ramp value="-5db" duration="0.3" type="log"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+
+
+
+	<PatchTable>
+	  <Program id="0"> 					<!-- m. 1 -->
+		<!-- resonators off -->
+	  </Program>
+	  <Program id="1"> 					<!-- m. 20 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>21-71</Range>
+	    </Channel>
+	  </Program>
+	  <Program id="2"> 					<!-- m. 30 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>21-41</Range>
+	    </Channel>
+	  </Program>
+	  <Program id="3"> 					<!-- m. 60 -->
+	    <Channel id="15">
+	      <Patch>gomes-cresc1</Patch>
+	    </Channel>
+	    <Channel id="15">
+	      <Patch>gomes-cresc1</Patch>
+		  <Range>54</Range>
+	    </Channel>	
+	    <Channel id="15">
+	      <Patch>gomes-cresc1-more</Patch>
+		  <Range>21-53</Range>
+	    </Channel>	
+	  </Program>
+	  <Program id="4"> 					<!-- m. 69 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>21-41</Range>
+	    </Channel>
+	  </Program>	
+	  <Program id="5"> 					<!-- m. 85 -->
+		<!-- resonators off -->
+	  </Program>	
+	  <Program id="6"> 					<!-- m. 119 -->
+	    <Channel id="15">
+	      <Patch>gomes-cresc1</Patch>
+	    </Channel>
+	  </Program>	
+	  <Program id="7"> 					<!-- m. 132 -->
+		<!-- resonators off -->
+	  </Program>	
+	  <Program id="8"> 					<!-- m. 139 -->
+	    <Channel id="15">
+	      <Patch>gomes-cresc1</Patch>
+	    </Channel>
+	  </Program>
+	  <Program id="9"> 					<!-- m. 69 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>21-41</Range>
+	    </Channel>
+	  </Program>		
+	
+	
+	  <Program id="127">
+	   <Channel id="0">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	   <Channel id="15">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	  </Program>	
+	</PatchTable>
+
+  <StringMap>
+  </StringMap>
+
+  <GlobalControls>
+    <Control name="MasterVolume" id="72"/>
+    <Control name="PitchTrackInputMute" id="18" threshold="8"/>
+  </GlobalControls>
+</PatchTableRoot>

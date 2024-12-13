@@ -1,0 +1,233 @@
+<?xml version="1.0" standalone="yes"?>
+
+<!-- BJ Derganc, "Play" for MRP
+  -- uses continuous controller -->
+
+<PatchTableRoot>
+  <Patch name="basic" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15db/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="calibrate" class="CalibratorNote">		<!-- for Oxygen8 -->
+    <Parameter name="GlobalAmplitude" value="-26dB"/>
+    <Control name="phaseOffset" id="8" channel="0"/>
+    <Control name="amplitudeOffset" id="13" channel="0"/>
+  </Patch>
+
+  <Patch name="hairpin" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-40dB/-40dB">
+        <Ramp value="-10dB" duration="4" type="log"/>
+		<Ramp value="-10dB" duration="1" type="log"/>
+        <Ramp value="-40dB" duration="4" type="log"/>
+	  </Parameter>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+ 
+  <Patch name="noncresc-bass" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10dB/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>	
+  <Patch name="noncresc-tenor" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-18dB/-12dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>	
+  <Patch name="noncresc-alto" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-21dB/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="noncresc-soprano" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-18dB/-12dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1,.5,.125,.0625"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+
+  <Patch name="lastbar" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+
+  <Patch name="continuous" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+	 	<Parameter name="GlobalAmplitude" value="-55dB/-24dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+	    <Parameter name="GlobalAmplitude" value="1/2" concavity="0"/>
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	    <Parameter name="HarmonicCentroid" value="1/4" round="1" shift="multiply"/>		
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Pitch">
+      </Quality>
+      <Quality name="Harmonic">
+      </Quality>
+    </RealTimeQualities>
+  </Patch>
+  <Patch name="continuous-bass" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+	 	<Parameter name="GlobalAmplitude" value="-47dB/-12dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+	    <Parameter name="GlobalAmplitude" value="1/2" concavity="0"/>
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	    <Parameter name="HarmonicCentroid" value="1/4" round="1" shift="multiply"/>		
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Pitch">
+      </Quality>
+      <Quality name="Harmonic">
+      </Quality>
+    </RealTimeQualities>
+  </Patch>
+  <Patch name="continuous-tenor" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+	 	<Parameter name="GlobalAmplitude" value="-51dB/-18dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+	    <Parameter name="GlobalAmplitude" value="1/2" concavity="0"/>
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	    <Parameter name="HarmonicCentroid" value="1/4" round="1" shift="multiply"/>		
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Pitch">
+      </Quality>
+      <Quality name="Harmonic">
+      </Quality>
+    </RealTimeQualities>
+  </Patch>
+
+
+
+	<PatchTable>
+	  <Program id="0">
+	  </Program>
+	  <Program id="+">    <!-- m. 13 -->
+		<!--<Channel id="0">
+		  <Patch>hairpin</Patch>
+		  <Range>69</Range>
+		</Channel>-->
+		<Channel id="15">
+			<Patch>hairpin</Patch>
+			<Range>69</Range>
+		</Channel>
+	  </Program>
+	  <Program id="+">    <!-- m. 16 -->
+      </Program>
+
+	  <!--<Program id="+">    
+        <Channel id="0">
+	      <Patch>noncresc-bass</Patch>
+		  <Range>0-47</Range>
+	    </Channel>
+        <Channel id="0">
+	      <Patch>noncresc-tenor</Patch>
+		  <Range>48-59</Range>
+	    </Channel>
+        <Channel id="0">
+	      <Patch>noncresc-alto</Patch>
+		  <Range>60-83</Range>	
+	    </Channel>		
+        <Channel id="0">
+	      <Patch>noncresc-soprano</Patch>
+		  <Range>84-108</Range>	
+	    </Channel>		
+	    <Channel id="15">
+		  <Patch>continuous</Patch>
+		</Channel>
+	  </Program>-->
+	  <Program id="+">	<!-- m. 131 -->
+	    <Channel id="15">
+		  <Patch>continuous-bass</Patch>
+		  <Range>0-47</Range>			
+		</Channel>
+	    <Channel id="15">
+		  <Patch>continuous-tenor</Patch>
+		  <Range>48-59</Range>			
+		</Channel>				
+	    <Channel id="15">
+		  <Patch>continuous</Patch>
+		  <Range>60-108</Range>			
+		</Channel>
+	  </Program>
+	
+	  <Program id="+">    <!-- m. 157 -->
+      </Program>	
+	  <Program id="+">    <!-- m. 159 -->
+        <!--<Channel id="0">
+	      <Patch>lastbar</Patch>
+	    </Channel>-->
+	    <Channel id="15">
+		  <Patch>continuous-bass</Patch>
+		  <Range>0-47</Range>			
+		</Channel>
+	    <Channel id="15">
+		  <Patch>continuous-tenor</Patch>
+		  <Range>48-59</Range>			
+		</Channel>				
+	    <Channel id="15">
+		  <Patch>continuous</Patch>
+		  <Range>60-108</Range>			
+		</Channel>	
+	  </Program>
+
+	  <Program id="127">
+	   <Channel id="0">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	   <Channel id="15">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	  </Program>	
+	</PatchTable>
+
+  <StringMap>
+  </StringMap>
+
+  <GlobalControls>
+    <Control name="MasterVolume" id="13"/>
+  </GlobalControls>
+</PatchTableRoot>

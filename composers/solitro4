@@ -1,0 +1,3 @@
+#!/bin/sh
+
+csound solitro_cue4.csd

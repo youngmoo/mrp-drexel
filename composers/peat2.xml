@@ -1,0 +1,391 @@
+<?xml version="1.0" standalone="yes"?>
+<PatchTableRoot>
+  <Patch name="basic" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-15db/-15dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+  </Patch>
+  <Patch name="calibrate" class="CalibratorNote">		<!-- for Oxygen8 -->
+    <Parameter name="GlobalAmplitude" value="-26dB"/>
+    <Control name="phaseOffset" id="8" channel="0"/>
+    <Control name="amplitudeOffset" id="13" channel="0"/>
+  </Patch>
+
+
+  <Patch name="mrp-standard" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+	 	<Parameter name="GlobalAmplitude" value="-55dB/-20dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+	    <Parameter name="GlobalAmplitude" value="1/2" concavity="0"/>
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	    <Parameter name="HarmonicCentroid" value="1/4" round="1" shift="multiply"/>		
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Pitch">
+        <Parameter name="RelativeFrequency" value="1/1.059" mode="exp"/>
+		<Parameter name="LoopGain" value="0/0" concavity="-1000"/>
+	    <Parameter name="GlobalAmplitude" value="1/8" concavity="0" mode="abs"/>
+		<Parameter name="HarmonicAmplitudes" value="0/0,0/.125,0/.125,0/.0625,0/.125,0/.125,0/.125,0/.125" concavity="-5" mode="abs"/>
+        <Vibrato weight=".99" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Harmonic">
+        <Parameter name="HarmonicCentroid" value="1/4" round="0" shift="multiply"/>
+        <Parameter name="HarmonicAmplitudes" value="0/0,0/-.25,0/-.125,0/-.0625"/>
+		<Parameter name="GlobalAmplitude" value="1/16" concavity="-2"/>
+      </Quality>
+    </RealTimeQualities>
+  </Patch>
+  <Patch name="harmonic-up16" class="RealTimeMidiNote"> <!-- UseHarmonicSweep -->
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-10dB/-10dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <!-- <Parameter name="LoopGain" value="100000"/> -->
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	 	<Parameter name="GlobalAmplitude" value="-30dB/-15dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>     
+      <Quality name="Pitch">
+        <Parameter name="RelativeFrequency" value="1/2" mode="exp"/>
+	<Parameter name="LoopGain" value="0/0" concavity="-1000"/>
+        <Vibrato weight=".059" clipLower="false" clipUpper="false"/>
+      </Quality>    
+      <Quality name="Harmonic">
+        <Parameter name="HarmonicCentroid" value="1/4" round="0" shift="multiply"/>
+	<Parameter name="GlobalAmplitude" value="1/8" concavity="2"/>
+      </Quality>
+		<UseHarmonicSweep range="16" spread="0"/>
+      <!-- <KeyDownHoldoff delay=".05" scaler="0.5"/> -->
+    </RealTimeQualities>
+  </Patch>
+
+  <Patch name="peat-sustain1" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="100000"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-20dB"/>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+
+  <Patch name="moriarty-cresc1" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-40dB">
+        <Ramp value="-20db" duration="0.6" type="log" gated="true"/>
+        <Ramp value="-5db" duration="1.2" type="log" gated="false"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+  <Patch name="moriarty-cresc1-fast" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-40dB">
+        <Ramp value="-20db" duration="0.5" type="log" gated="true"/>
+        <Ramp value="-5db" duration="0.7" type="log" gated="false"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+  <Patch name="moriarty-cresc-tremolo1" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-40dB">
+        <!--<Ramp value="-10db" duration="2" type="log" gated="true"/>-->
+        <Ramp value="-20db" duration="0.8" type="log" gated="true"/>
+        <Ramp value="-10db" duration="1.2" type="log" gated="false"/>
+        <Ramp value="0" duration="2" type="step"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+  <Patch name="moriarty-cresc-tremolo1-notrigger" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-40dB">
+        <!--<Ramp value="-10db" duration="2" type="log" gated="true"/>-->
+        <Ramp value="-5db" duration="1.2" type="log" gated="false"/>
+        <Ramp value="0" duration="1" type="step"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+  <Patch name="moriarty-cresc-notrigger" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-30dB">
+        <Ramp value="-5db" duration="1.2" type="log" gated="false"/>
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+      <Parameter name="RelativeFrequency" value="1"/>
+    </Synth>
+  </Patch>
+
+  <Patch name="jm-test1" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-45dB">	<!-- was -35dB -->
+        <Ramp value="-45db" duration="2" type="log"/>	<!-- was 1 -->
+        <Ramp value="-10db" duration="2" type="log"/>	<!-- was 1 -->
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.3,0,.5,.3,.2,.1"/>
+	  <!-- <Parameter name="HarmonicAmplitudes" value=".5,1,1,0,.5,.4,.3,.2,.1,.1"/>-->
+<!--<Parameter name="HarmonicAmplitudes" value="0,0,0,0,1,0,1"/>-->
+      <Parameter name="AmplitudeFeedbackScaler" value="20"/>
+      <Parameter name="RelativeFrequency" value="1">
+          <Ramp value="1" duration="2" type="linear"/>
+      </Parameter>
+    </Synth>
+  </Patch>  
+  <Patch name="jm-test2" class="RealTimeMidiNote">
+    <VelocityCurve>2</VelocityCurve>
+    <Synth class="PllSynth">
+      <Parameter name="GlobalAmplitude" value="-25dB/-25dB"/>
+      <Parameter name="HarmonicAmplitudes" value="1"/>
+      <Parameter name="LoopGain" value="100000"/>
+    </Synth>
+    <RealTimeQualities>
+      <Quality name="Intensity">
+		<Parameter name="HarmonicAmplitudes" value="1,.5,.5,.25,.125,.0625,.0625,.05"/>
+	 	<Parameter name="GlobalAmplitude" value="-55dB/-20dB" concavity="0" mode="exp"/>
+      </Quality>
+      <Quality name="Brightness">
+	    <Parameter name="GlobalAmplitude" value="1/2" concavity="0"/>
+		<Parameter name="HarmonicAmplitudes" value="0"/>
+	    <Parameter name="HarmonicCentroid" value="1/4" round="1" shift="multiply"/>		
+        <Vibrato weight="0" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Pitch">
+        <Parameter name="RelativeFrequency" value="5" mode="exp"/>
+		<Parameter name="LoopGain" value="0/0" concavity="-1000"/>
+	    <Parameter name="GlobalAmplitude" value="1/8" concavity="0" mode="abs"/>
+		<Parameter name="HarmonicAmplitudes" value="0/0,0/.125,0/.125,0/.0625,0/.125,0/.125,0/.125,0/.125" concavity="-5" mode="abs"/>
+        <Vibrato weight=".99" clipLower="false" clipUpper="false"/>
+      </Quality>
+      <Quality name="Harmonic">
+        <Parameter name="HarmonicCentroid" value="1/4" round="0" shift="multiply"/>
+        <Parameter name="HarmonicAmplitudes" value="0/0,0/-.25,0/-.125,0/-.0625"/>
+		<Parameter name="GlobalAmplitude" value="1/16" concavity="-2"/>
+      </Quality>
+    </RealTimeQualities>
+  </Patch>
+
+  <Patch name="jm-gliss" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-45dB">	<!-- was -35dB -->
+        <Ramp value="-45db" duration="10" type="log"/>	<!-- was 1 -->
+        <Ramp value="-10db" duration="2" type="log"/>	<!-- was 1 -->
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.3,0,.5,.3,.2,.1"/>
+	  <!-- <Parameter name="HarmonicAmplitudes" value=".5,1,1,0,.5,.4,.3,.2,.1,.1"/>-->
+<!--<Parameter name="HarmonicAmplitudes" value="0,0,0,0,1,0,1"/>-->
+      <Parameter name="AmplitudeFeedbackScaler" value="20"/>
+      <Parameter name="RelativeFrequency" value="1">
+   <Ramp value="1" duration="2" type="linear"/>
+   <Ramp value="32" duration="8" type="linear"/>
+</Parameter>
+    </Synth>
+  </Patch>  
+  <Patch name="jm-test-tremolo" class="MidiNote">
+    <Synth class="PllSynth">
+      <Parameter name="LoopGain" value="0"/>
+      <Parameter name="UseInterferenceRejection" value="true"/>
+      <Parameter name="UseAmplitudeFeedback" value="false"/>
+      <Parameter name="GlobalAmplitude" value="-45dB">	<!-- was -35dB -->
+        <Ramp value="-45db" duration="2" type="log"/>	<!-- was 1 -->
+        <Ramp value="-10db" duration="1" type="log"/>	<!-- was 1 -->
+        <Ramp value="-45db" duration="0.2" type="log"/>	<!-- was 1 -->
+        <Ramp value="-10db" duration="0.2" type="log"/>	<!-- was 1 -->
+        <Ramp value="-45db" duration="0.2" type="log"/>	<!-- was 1 -->
+        <Ramp value="-10db" duration="0.15" type="log"/>	<!-- was 1 -->
+        <Ramp value="-45db" duration="0.15" type="log"/>	<!-- was 1 -->
+       <Ramp value="-10db" duration="0.13" type="log"/>	<!-- was 1 -->
+        <Ramp value="-45db" duration="0.13" type="log"/>	<!-- was 1 -->
+       <Ramp value="-10db" duration="0.11" type="log"/>	<!-- was 1 -->
+        <Ramp value="-45db" duration="0.11" type="log"/>	<!-- was 1 -->
+       <Ramp value="-10db" duration="0.09" type="log"/>	<!-- was 1 -->
+        <Ramp value="-45db" duration="0.09" type="log"/>	<!-- was 1 -->
+       <Ramp value="-10db" duration="0.09" type="log"/>	<!-- was 1 -->
+      </Parameter>
+	  <Parameter name="HarmonicAmplitudes" value="1,.5,.3,0,.5,.3,.2,.1"/>
+	  <!-- <Parameter name="HarmonicAmplitudes" value=".5,1,1,0,.5,.4,.3,.2,.1,.1"/>-->
+      <Parameter name="AmplitudeFeedbackScaler" value="20"/>
+    </Synth>
+  </Patch>  
+
+	<PatchTable>
+	  <Program id="0"> 					<!-- m. 1 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>32,33,36,41,43,45-108</Range>
+	    </Channel>
+	  </Program>
+	  <Program id="1"> 					<!-- m. 20 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>21-56,66</Range>
+	    </Channel>
+	  </Program>	
+	  <Program id="2"> 					<!-- m. 30 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+	    </Channel>
+	  </Program>  	
+	  <Program id="3"> 					<!-- m. 39 -->
+	  </Program>	  
+	  <Program id="4"> 					<!-- m. 42 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+  		  <Range>21-61</Range>
+	    </Channel>
+	  </Program>	
+	  <Program id="5"> 					<!-- m. 44 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+	    </Channel>
+	  </Program>	  
+	  <Program id="6"> 					<!-- m. 52 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+		  <Range>43,54,56,63</Range>
+	    </Channel>
+	  </Program>	
+	  <Program id="7"> 					<!-- m. 55 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+	    </Channel>
+	  </Program>	    
+	  <Program id="8"> 					<!-- m. 61 -->
+	  </Program>	
+	  <Program id="9"> 					<!-- m. 66 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+	    </Channel>
+	  </Program>	
+	  <Program id="10"> 				<!-- m. 71 -->
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>38,48,49,58</Range>
+		  </Channel>
+	  </Program>	
+	  <Program id="11"> 				<!-- m. 77 -->
+	    <Channel id="15">
+	      <Patch>mrp-standard</Patch>
+	    </Channel>
+	  </Program>	  
+	  <Program id="12"> 				<!-- m. 80 -->
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>35,47</Range>
+			<Priority>1</Priority>
+		  </Channel>
+	  </Program>	
+	  <Program id="13"> 				<!-- m. 83 -->
+  	    <Channel id="15">
+  	      <Patch>mrp-standard</Patch>
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>35,47</Range>
+			<Priority>1</Priority>
+		  </Channel>
+  	    </Channel>
+	  </Program>
+	  <Program id="14"> 				<!-- m. 92 -->
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>35,47</Range>
+			<Priority>1</Priority>
+		  </Channel>
+	  </Program>	
+	  <Program id="15"> 				<!-- m. 94 -->
+  	    <Channel id="15">
+  	      <Patch>mrp-standard</Patch>
+  	    </Channel>
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>35,47</Range>
+			<Priority>1</Priority>
+		  </Channel>
+	  </Program>
+	  <Program id="16"> 				<!-- m. 96 -->
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>35,47</Range>
+			<Priority>1</Priority>
+		  </Channel>
+	  </Program>	
+	  <Program id="17"> 				<!-- m. 99 -->
+  	    <Channel id="15">
+  	      <Patch>mrp-standard</Patch>
+  	    </Channel>
+	  <Channel id="15">
+	    <Patch>mrp-standard</Patch>
+	 	<Range>35,47</Range>
+		<Priority>1</Priority>
+	  </Channel>
+	  </Program>
+	  <Program id="18"> 				<!-- m. 102 -->
+		  <Channel id="15">
+		    <Patch>mrp-standard</Patch>
+		 	<Range>27,39,55,58,63,67</Range>
+		  </Channel>
+	  </Program>
+	
+	  <Program id="127">
+	   <Channel id="0">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	   <Channel id="15">
+	     <Patch>calibrate</Patch>
+	   </Channel>
+	  </Program>	
+	</PatchTable>
+
+  <StringMap>
+	   <!--<Map note="63" string="46"/>	-->
+  </StringMap>
+
+  <GlobalControls>
+    <Control name="MasterVolume" id="11"/>
+    <Control name="PitchTrackInputMute" id="18" threshold="8"/>
+  </GlobalControls>
+</PatchTableRoot>
